@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap.min.css" crossorigin="anonymous">
+    <script src="bootstrap-4.4.1-dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!---->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!---->
+    <link rel="stylesheet" href="estilos_temas.css">
+    <script type="text/javascript" src="temas.js"></script>
+
+    <title>Temas</title>
+</head>
+<body id="cuerpo">
+    <!--ENCABEZADO-->
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1>Escoja un tema</h1>      
+        </div>
+      </div>
+
+    <!--CARDS CON LOS DIFERENTES TEMAS-->
+
+    <div class='container-fluid'>
+
+    <!--PRIMER ROW-->
+
+        <div class="row align-items-start">
+            <div class='col-xs-4 col-md-4 col-sm-6 gray'>
+                <div class="card" style="width: 18rem;">
+                    <div class="card-header" style="text-align: center;">ANIMALES</div>
+                    <div class="card-body">
+                        <img class="card-img-top" src="ImagenesTemas/tema_animales.png" alt="Card image cap" height="100%" width="100%">
+                    </div>
+                    <div class="card-footer">
+                        <div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">COMENZAR
+                                <span class="caret"></span></button>
+                                    <ul class="dropdown-menu">
+                                        <li><a onclick="empezar_preguntas_animales()">Animales Domésticos</a></li>
+                                        <li><a href="#">Animales Salvajes</a></li>
+                                    </ul>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            <div class='col-xs-4 col-md-4 col-sm-6 gray'>
+                <div class="card" style="width: 18rem;">
+                    <div class="card-header">COSTUMBRES DEL ECUADOR</div>
+                    <div class="card-body">
+                        <img class="card-img-top" src="ImagenesTemas/tema_costumbres.png" alt="Card image cap" height="100%" width="100%">
+                    </div>
+                    <div class="card-footer">
+                            <div class="dropdown">
+                                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">COMENZAR
+                                        <span class="caret"></span></button>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">HTML</a></li>
+                                                <li><a href="#">CSS</a></li>
+                                                <li><a href="#">JavaScript</a></li>
+                                            </ul>
+                            </div>
+                    </div>
+                    </div>
+                </div>
+            <div class='col-xs-4 col-md-4 col-sm-6 gray'>
+                <div class="card" style="width: 18rem;">
+                    <div class="card-header">COLORES</div>
+                    <div class="card-body">
+                        <img class="card-img-top" src="ImagenesTemas/tema_colores.png" alt="Card image cap">
+                    </div>
+                    <div class="card-footer">
+                            <div class="dropdown">
+                                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">COMENZAR
+                                        <span class="caret"></span></button>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">Colores Primarios</a></li>
+                                                <li><a href="#">Colores Secundarios</a></li>
+                                            </ul>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <!--SEGUNDO ROW-->
+
+        <div class="row align-items-start">
+            <div class='col-xs-4 col-md-4 col-sm-6 gray'>
+                <div class="card" style="width: 18rem;">
+                    <div class="card-header" style="text-align: center;">ORIENTACIÓN</div>
+                    <div class="card-body">
+                        <img class="card-img-top" src="ImagenesTemas/tema_orientacion.png" alt="Card image cap" height="100%" width="100%">
+                    </div>
+                    <div class="card-footer">
+                        <div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">COMENZAR
+                                <span class="caret"></span></button>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">HTML</a></li>
+                                        <li><a href="#">CSS</a></li>
+                                        <li><a href="#">JavaScript</a></li>
+                                    </ul>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            <div class='col-xs-4 col-md-4 col-sm-6 gray'>
+                <div class="card" style="width: 18rem;">
+                    <div class="card-header">CUERPO HUMANO</div>
+                    <div class="card-body">
+                        <img class="card-img-top" src="ImagenesTemas/tema_cuerpo_humano.jpg" alt="Card image cap" height="100%" width="100%">
+                    </div>
+                    <div class="card-footer">
+                            <div class="dropdown">
+                                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">COMENZAR
+                                        <span class="caret"></span></button>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">Partes del Cuerpo Humano</a></li>
+                                            </ul>
+                            </div>
+                    </div>
+                    </div>
+                </div>
+            <div class='col-xs-4 col-md-4 col-sm-6 gray'>
+                <div class="card" style="width: 18rem;">
+                    <div class="card-header">EMOCIONES</div>
+                    <div class="card-body">
+                        <img class="card-img-top" src="ImagenesTemas/tema_emociones.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card-footer">
+                            <div class="dropdown">
+                                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">COMENZAR
+                                        <span class="caret"></span></button>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">HTML</a></li>
+                                                <li><a href="#">CSS</a></li>
+                                                <li><a href="#">JavaScript</a></li>
+                                            </ul>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <hr>
+            <!--TERCER ROW-->
+            <div class="row align-items-start">
+                <div class='col-xs-4 col-md-4 col-sm-6 gray'>
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-header" style="text-align: center;">FIGURAS GEOMÉTRICAS</div>
+                        <div class="card-body">
+                            <img class="card-img-top" src="ImagenesTemas/tema_figuras_geometicas.jpg" alt="Card image cap" height="100%" width="100%">
+                        </div>
+                        <div class="card-footer">
+                            <div class="dropdown">
+                                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">COMENZAR
+                                    <span class="caret"></span></button>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">HTML</a></li>
+                                            <li><a href="#">CSS</a></li>
+                                            <li><a href="#">JavaScript</a></li>
+                                        </ul>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+                <div class='col-xs-4 col-md-4 col-sm-6 gray'>
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-header">MONEDAS</div>
+                        <div class="card-body">
+                            <img class="card-img-top" src="ImagenesTemas/tema_monedas.jpg" alt="Card image cap" height="100%" width="100%">
+                        </div>
+                        <div class="card-footer">
+                                <div class="dropdown">
+                                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">COMENZAR
+                                            <span class="caret"></span></button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="#">HTML</a></li>
+                                                    <li><a href="#">CSS</a></li>
+                                                    <li><a href="#">JavaScript</a></li>
+                                                </ul>
+                                </div>
+                        </div>
+                        </div>
+                    </div>
+                <div class='col-xs-4 col-md-4 col-sm-6 gray'>
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-header">NÚMEROS</div>
+                        <div class="card-body">
+                            <img class="card-img-top" src="ImagenesTemas/tema_numeros.jpg" alt="Card image cap">
+                        </div>
+                        <div class="card-footer">
+                                <div class="dropdown">
+                                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">COMENZAR
+                                            <span class="caret"></span></button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="#">HTML</a></li>
+                                                    <li><a href="#">CSS</a></li>
+                                                    <li><a href="#">JavaScript</a></li>
+                                                </ul>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <hr>
+<!--CUARTO ROW-->
+
+                <div class="row align-items-start">
+                    <div class='col-xs-4 col-md-4 col-sm-6 gray'>
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-header" style="text-align: center;">FAMILIA</div>
+                            <div class="card-body">
+                                <img class="card-img-top" src="ImagenesTemas/tema_familia.jpg" alt="Card image cap" height="100%" width="100%">
+                            </div>
+                            <div class="card-footer">
+                                <div class="dropdown">
+                                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">COMENZAR
+                                        <span class="caret"></span></button>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">HTML</a></li>
+                                                <li><a href="#">CSS</a></li>
+                                                <li><a href="#">JavaScript</a></li>
+                                            </ul>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-xs-4 col-md-4 col-sm-6 gray'>
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-header">OBJETOS DE LA CLASE</div>
+                            <div class="card-body">
+                                <img class="card-img-top" src="ImagenesTemas/tema_clase.png" alt="Card image cap" height="100%" width="100%">
+                            </div>
+                            <div class="card-footer">
+                                    <div class="dropdown">
+                                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">COMENZAR
+                                                <span class="caret"></span></button>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="#">HTML</a></li>
+                                                        <li><a href="#">CSS</a></li>
+                                                        <li><a href="#">JavaScript</a></li>
+                                                    </ul>
+                                    </div>
+                            </div>
+                            </div>
+                        </div>
+                    <div class='col-xs-4 col-md-4 col-sm-6 gray'>
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-header">ESTACIONES DEL AÑO</div>
+                            <div class="card-body">
+                                <img class="card-img-top" src="ImagenesTemas/tema_estaciones.jpg" alt="Card image cap">
+                            </div>
+                            <div class="card-footer">
+                                    <div class="dropdown">
+                                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">COMENZAR
+                                                <span class="caret"></span></button>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="#">HTML</a></li>
+                                                        <li><a href="#">CSS</a></li>
+                                                        <li><a href="#">JavaScript</a></li>
+                                                    </ul>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+    
+    </div><!--div del container fluid-->
+    <hr>
+</body>
+
+<!--footer-->
+
+<footer class="page-footer font-small blue">
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+      <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+</html>

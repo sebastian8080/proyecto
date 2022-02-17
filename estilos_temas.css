@@ -1,0 +1,8 @@
+#boton_animales{
+    display: flex;
+    justify-content: center;	
+}
+
+.card-header{
+    text-align: center;
+}

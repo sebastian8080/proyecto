@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia</title>
+
+    <script src="http://code.jquery.com/jquery.js"></script>
+</head>
+
+<body>
+
+
+    <div id="pregunta" class="row"></div>
+
+    <!--Hacer que las imagenes me aparezcan en una sola columna-->
+    <div class="container">
+        <div class="row">
+            <div id="respuestas" class="col-md-3 col-lg-3"></div>
+        </div>
+    </div>
+
+    <input type="button" value="Comprobar" onclick="comprobar()">
+
+    <script>
+        var preguntas = [
+            "<audio src='AudioTemaAnimal/PrimerPregunta.mp3' controls autoplay></audio>",
+            "Mayor super heroe de todos los tiempos",
+            "Por que los pajaros pian",
+            "<h1>¿Cual de los siguientes animales es el león?</h1>"
+        ];
+
+        var respuestas = [
+            //primera tanda de imagenes
+            ["<img src='ImagenesTemaAnimal/buho.jpg' alt = 'No se cargo la imagen' width='200px' height='200px'>",
+                "<img src='ImagenesTemaAnimal/conejo.jpg' alt = 'No se cargo la imagen' width='200px' height='200px'>"
+                //"<img src='ImagenesTemaAnimal/leon.jpg' alt = 'No se cargo la imagen' width='200px' height='200px'>",
+                /*"<img src='ImagenesTemaAnimal/oso_panda.jpg' alt = 'No se cargo la imagen' width='200px' height='200px'>"*/],
+            //Segunda tanda de imagenes
+            ["Spiderman", "Iron Man"],
+            ["Por que si", "Por hambre"],
+            ["<img src='ImagenesTemaAnimal/leon.jpg' alt = 'No se cargo la imagen' width='200px' height='200px'>",
+             "<img src='ImagenesTemaAnimal/oso_panda.jpg' alt = 'No se cargo la imagen' width='200px' height='200px'>"]
+        ];
+ 
+        jugar();
+        var indice_respuesta_correcta;
+
+
+        function jugar(){
+        
+        var indicealeatorio = Math.floor(Math.random() * preguntas.length);
+
+        console.log(preguntas.length);
+
+        var respuestas_posibles = respuestas[indicealeatorio];
+
+        var posiciones = [0, 1];
+        var respuestas_reordenadas = [];
+        var ya_se_metio = false;
+        for (i in respuestas_posibles) {
+            var posicion_aleatoria = Math.floor(Math.random() * posiciones.length);
+            if (posicion_aleatoria == 0 && ya_se_metio == false) {
+                indice_respuesta_correcta = i;
+                ya_se_metio = true;
+            }
+            respuestas_reordenadas[i] = respuestas_posibles[posiciones[posicion_aleatoria]];
+            posiciones.splice(posicion_aleatoria, 1);
+        }
+
+        var texto_respuestas = "";
+
+        for (i in respuestas_reordenadas) {
+            texto_respuestas += '<input type="radio" name = "pp" value = "' + i + '"><table><tr><td><label>' + respuestas_reordenadas[i] + '</label></td></tr></table><br>';
+        }
+
+        document.getElementById("respuestas").innerHTML = texto_respuestas;
+        document.getElementById("pregunta").innerHTML = preguntas[indicealeatorio];
+        }
+        
+        
+        
+        
+        function comprobar() {
+            var respuesta = $("input[type = radio]:checked").val();
+            if (respuesta == indice_respuesta_correcta) {
+                alert("Que bien!!!");
+                jugar();
+            } else {
+                alert("Que mal intentalo otravez");
+            }
+        }
+    </script>
+
+</body>
+
+</html>
